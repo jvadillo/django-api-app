@@ -1,11 +1,11 @@
 
-# 📘 Tutorial: Cómo exponer datos de un modelo Django en formato JSON (sin frameworks externos)
+# Tutorial: Cómo exponer datos de un modelo Django en formato JSON (sin frameworks externos)
 
 Este tutorial te guía paso a paso para ofrecer los datos de un modelo Django en formato JSON utilizando solamente Django.
 
 ---
 
-## 🛠️ Paso 0: Crear un nuevo proyecto y aplicación
+## Paso 0: Crear un nuevo proyecto y aplicación
 
 ### 0.1 Crear el proyecto
 
@@ -33,7 +33,7 @@ INSTALLED_APPS = [
 
 ---
 
-## 🏗️ Paso 1: Definir el modelo
+## Paso 1: Definir el modelo
 
 En `countries/models.py`, define el modelo `Country`:
 
@@ -51,7 +51,7 @@ class Country(models.Model):
 
 ---
 
-## 🔃 Paso 2: Crear y aplicar las migraciones
+## Paso 2: Crear y aplicar las migraciones
 
 ```bash
 python manage.py makemigrations
@@ -60,7 +60,7 @@ python manage.py migrate
 
 ---
 
-## 🌐 Paso 3: Crear la vista que devuelve JSON
+## Paso 3: Crear la vista que devuelve JSON
 
 En `apiapp/views.py`, agrega lo siguiente:
 
@@ -78,7 +78,7 @@ def country_list(request):
 
 ---
 
-## 🧭 Paso 4: Agregar la URL
+## Paso 4: Agregar la URL
 
 En `apiapp/urls.py` (créalo si no existe):
 
@@ -105,7 +105,7 @@ urlpatterns = [
 
 ---
 
-## 🧪 Paso 5: Probar en el navegador
+## Paso 5: Probar en el navegador
 
 Ejecuta el servidor de desarrollo:
 
